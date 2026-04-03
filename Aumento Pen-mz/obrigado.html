@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Compra Confirmada - O Método do Tomate</title>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '4055334618129287');
+    fbq('track', 'PageView');
+    fbq('track', 'Purchase', {value: 250, currency: 'MZN'});
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=4055334618129287&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <!-- Meta Pixel Code 2 -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '26245975408359617');
+    fbq('track', 'PageView');
+    fbq('track', 'Purchase', {value: 250, currency: 'MZN'});
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=26245975408359617&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code 2 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #fff;
+            color: #333;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            background: #fff;
+            min-height: 100vh;
+        }
+
+        /* ===== SUCCESS HEADER ===== */
+        .success-header {
+            background: linear-gradient(135deg, #1db832, #27ae34);
+            padding: 32px 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .success-icon {
+            width: 72px;
+            height: 72px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            animation: scaleIn 0.5s ease;
+        }
+
+        .success-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: #fff;
+        }
+
+        @keyframes scaleIn {
+            0% { transform: scale(0); opacity: 0; }
+            60% { transform: scale(1.15); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .success-header h1 {
+            font-size: 22px;
+            font-weight: 900;
+            margin-bottom: 6px;
+            letter-spacing: -0.01em;
+        }
+
+        .success-header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* ===== PURCHASE INFO ===== */
+        .purchase-info {
+            background: #f8f9fa;
+            border-bottom: 1px solid #e8e8e8;
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .purchase-info .product-name {
+            font-weight: 700;
+            font-size: 14px;
+            color: #1c1e21;
+        }
+
+        .purchase-info .product-desc {
+            font-size: 12px;
+            color: #90949c;
+            margin-top: 2px;
+        }
+
+        .purchase-info .price {
+            font-weight: 900;
+            font-size: 18px;
+            color: #1db832;
+        }
+
+        /* ===== DOWNLOAD SECTION ===== */
+        .download-section {
+            padding: 24px 20px;
+            text-align: center;
+        }
+
+        .download-section h2 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #1c1e21;
+            margin-bottom: 6px;
+        }
+
+        .download-section .subtitle {
+            font-size: 13px;
+            color: #90949c;
+            margin-bottom: 20px;
+        }
+
+        .download-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 16px 24px;
+            background: linear-gradient(135deg, #e60000, #c20000);
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(230, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(230, 0, 0, 0.4);
+        }
+
+        .download-btn:active {
+            transform: translateY(0);
+        }
+
+        .download-btn svg {
+            width: 22px;
+            height: 22px;
+            fill: #fff;
+            flex-shrink: 0;
+        }
+
+        .download-btn .pulse-ring {
+            animation: pulseBtn 2s ease infinite;
+        }
+
+        @keyframes pulseBtn {
+            0%, 100% { box-shadow: 0 4px 14px rgba(230, 0, 0, 0.3); }
+            50% { box-shadow: 0 4px 24px rgba(230, 0, 0, 0.5); }
+        }
+
+        /* ===== STEPS SECTION ===== */
+        .steps-section {
+            padding: 20px;
+            background: #fafafa;
+            border-top: 1px solid #e8e8e8;
+        }
+
+        .steps-section h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1c1e21;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .step {
+            display: flex;
+            gap: 14px;
+            padding: 14px 0;
+            border-bottom: 1px solid #efefef;
+        }
+
+        .step:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .step-number {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #e60000, #c20000);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 15px;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .step-title {
+            font-weight: 700;
+            font-size: 14px;
+            color: #1c1e21;
+            margin-bottom: 3px;
+        }
+
+        .step-desc {
+            font-size: 13px;
+            color: #606770;
+            line-height: 1.45;
+        }
+
+        /* ===== SUPPORT ===== */
+        .support-section {
+            padding: 24px 20px;
+            text-align: center;
+            border-top: 1px solid #e8e8e8;
+        }
+
+        .support-section .support-icon {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .support-section h3 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #1c1e21;
+            margin-bottom: 4px;
+        }
+
+        .support-section p {
+            font-size: 13px;
+            color: #606770;
+            line-height: 1.5;
+            margin-bottom: 14px;
+        }
+
+        .support-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: #25d366;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 3px 10px rgba(37, 211, 102, 0.3);
+            transition: transform 0.2s ease;
+        }
+
+        .support-btn:hover {
+            transform: translateY(-1px);
+        }
+
+        .support-btn:active {
+            transform: translateY(0);
+        }
+
+        .support-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: #fff;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            padding: 16px 20px;
+            text-align: center;
+            background: #f0f0f0;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer p {
+            font-size: 11px;
+            color: #999;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Success Header -->
+        <div class="success-header">
+            <div class="success-icon">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            </div>
+            <h1>Compra Confirmada!</h1>
+            <p>O teu pagamento de 250 MTs foi recebido com sucesso.</p>
+        </div>
+
+        <!-- Purchase Info -->
+        <div class="purchase-info">
+            <div>
+                <div class="product-name">O Método do Tomate</div>
+                <div class="product-desc">E-book PDF - Acesso imediato</div>
+            </div>
+            <div class="price">250 MT</div>
+        </div>
+
+        <!-- Download Section -->
+        <div class="download-section">
+            <h2>O teu e-book está pronto!</h2>
+            <p class="subtitle">Clica no botão abaixo para fazer o download do PDF.</p>
+            <a href="assets/metodo_tomate.pdf" download class="download-btn pulse-ring">
+                <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                Baixar O Método do Tomate
+            </a>
+        </div>
+
+        <!-- Steps Section -->
+        <div class="steps-section">
+            <h3>Próximos Passos</h3>
+
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <div class="step-title">Faz download do PDF</div>
+                    <div class="step-desc">Clica no botão vermelho acima e guarda o ficheiro no teu telemóvel.</div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <div class="step-title">Lê a receita principal (Página 4)</div>
+                    <div class="step-desc">Vai directo à página 4 para ver a receita do Tónico de Performance Masculina com todos os ingredientes e passos.</div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <div class="step-title">Vai ao mercado comprar os ingredientes</div>
+                    <div class="step-desc">Precisas de: 4 tomates maduros bem vermelhos, azeite ou óleo de coco, gengibre fresco, mel puro e limão.</div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <div class="step-title">Prepara o tónico amanhã de manhã</div>
+                    <div class="step-desc">Toma em jejum para máxima absorção. Segue o protocolo de 30 dias (página 6) para resultados reais.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Support Section -->
+        <div class="support-section">
+            <div class="support-icon">💬</div>
+            <h3>Tens dúvidas?</h3>
+            <p>Se tiveres qualquer problema com o download ou dúvidas sobre o método, fala connosco no WhatsApp.</p>
+            <a href="https://wa.me/258XXXXXXXXX" target="_blank" class="support-btn">
+                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Falar no WhatsApp
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>O Método do Tomate - Todos os direitos reservados.<br>Este material é para uso pessoal e não deve ser distribuído ou revendido.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
