@@ -111,14 +111,6 @@
             width: 100%;
             position: relative;
             background: #000;
-            overflow: hidden;
-            max-height: 70vh;
-        }
-
-        .video-section iframe,
-        .video-section video,
-        .video-section vturb-smartplayer {
-            max-height: 70vh;
         }
 
         /* ===== VIEWERS ===== */
@@ -289,8 +281,8 @@
 
         <!-- Video Area -->
         <div class="video-section">
-            <div id="vturb-container">
-                <vturb-smartplayer id="vid-69cfd4d7e80c5a570ed53b00" style="display:block;width:100%;"></vturb-smartplayer>
+            <div id="vturb-container" style="position:relative;width:100%;padding-top:56.25%;overflow:hidden;">
+                <vturb-smartplayer id="vid-69cfd4d7e80c5a570ed53b00" style="position:absolute;top:0;left:0;width:100%;height:100%;"></vturb-smartplayer>
                 <script type="text/javascript">
                     var s=document.createElement("script"); s.src="https://scripts.converteai.net/e9be14cf-afa2-44b0-a1c8-54721a1cf2c2/players/69cfd4d7e80c5a570ed53b00/v4/player.js", s.async=!0,document.head.appendChild(s);
                 </script>
